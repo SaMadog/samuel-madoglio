@@ -256,7 +256,7 @@ main {
     color: var(--font);
     min-width: 120px;
     min-height: 30px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 25px;
     font-size: 1rem;
     cursor: pointer;
