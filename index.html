@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Madoglio - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="center-nav">
+                <li class="logo">
+                    <img src="imagens/logo-2.svg" alt="Logo" width="50" height="50">
+                </li>
+                <div class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills-me">Competências</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </ul>
+            <ul class="nav-links mobile">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills-me">Competências</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h3>Olá, Eu sou</h3>
+                <h1>Samuel Madoglio</h1>
+                <p>Desenvolvimento de Software, Cibersegurança, Administração de Redes e Sistemas, Ciência de Dados e Análise, Gestão de Projetos de TI e Testes de Software.</p>
+                <div class="buttons">
+                <a href="/"><button class="download-cv">Download CV</button></a>
+                <a href="#contato"><button class="contact-me">Contate-me</button></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="imagens/foto-perfil.jpg" alt="Samuel Madoglio">
+            </div>
+        </section>
+        <section class="about" id="about">
+           <div class="about-me">
+            <div class="about-tittle">
+                <h6>Sobre Mim</h6>
+                <h3>Combino inteligência e criatividade para superar qualquer obstáculo tecnológico.</h3>
+            </div>
+            <div class="about-text">
+                <p class="about-description">
+                    Sou um profissional apaixonado por tecnologia e inovação. Minha jornada profissional é marcada pela busca constante por soluções criativas e eficientes na área da informática.
+                </p>
+                <p class="about-description">Com profundo conhecimento em programação, análise de sistemas e gerenciamento de projetos, estou sempre pronto para enfrentar desafios e encontrar as melhores soluções para as necessidades tecnológicas das empresas.</p>
+            </div>
+           </div>
+            <div class="mission">
+                <h4><i>Minha Missão</i></h4>
+                <p><i>"A minha missão é usar a tecnologia como um catalisador para o progresso, desenvolvendo soluções que protejam, inovem e capacitem, criando um ecossistema digital onde a eficiência e a segurança andem de mãos dadas com a inovação e a criatividade."</i></p>
+            </div>
+        </section>
+        <section class="skills" id="skills-me">
+            <h3>Minhas Competências</h3>
+            <div class="skill-cards">
+                <div class="skill-card">
+                     <h4>Desenvolvimento de Software</h4>
+                        
+                    <ul>
+                        <li>Envolve a criação, implementação e manutenção de programas e sistemas de computador.</li>
+                        <li>Desenvolver código-fonte, realizar testes, corrigir bugs, implementar novas funcionalidades, colaborar com equipes de design e produto, e documentar processos e soluções.</li>
+                        <li>Linguagens de programação (como HTML, CSS, JavaScript, C#), sistemas de controle de versão (como Git), frameworks (como Flutter, React), e ambientes de desenvolvimento integrado (IDEs).</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Cibersegurança</h4>
+                    
+                    <ul>
+                        <li>Foca na proteção de sistemas de informação e dados contra acesso não autorizado, ataques cibernéticos, e outras ameaças.</li>
+                        <li>Implementar medidas de segurança, monitorar sistemas para detectar vulnerabilidades, responder a incidentes de segurança, realizar testes de penetração, e educar usuários sobre práticas seguras.</li>
+                        <li>Firewalls, sistemas de detecção de intrusão (IDS), ferramentas de criptografia, antivírus, e software de monitoramento de rede.</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Teste de Software</h4>
+                    
+                    <ul>
+                        <li>Envolve a avaliação e verificação de sistemas e aplicações de software para garantir que funcionem conforme esperado, sem bugs ou falhas, e atendam aos requisitos especificados.</li>
+                        <li>Realizar testes funcionais e não funcionais, escrever e executar casos de teste, automatizar testes, relatar e rastrear defeitos, colaborar com desenvolvedores e analistas para resolver problemas, e garantir a qualidade e desempenho do software.</li>
+                        <li> Ferramentas de teste de software (como Selenium, JUnit, TestNG), metodologias de teste (como Teste Ágil, Teste de Regressão, Teste de Carga), e plataformas de gestão de testes (como TestRail, QTest, Zephyr).</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Ciência de Dados e Análise</h4>
+                    
+                    <ul>
+                        <li>A disciplina que se concentra na extração de insights significativos a partir de grandes conjuntos de dados, utilizando métodos estatísticos e algoritmos de aprendizado de máquina.</li>
+                        <li>Coletar, processar e analisar dados, desenvolver modelos preditivos, visualizar dados para comunicar resultados, e colaborar com outras áreas para orientar decisões estratégicas.</li>
+                        <li> Linguagens de programação (como Python, R), bibliotecas de aprendizado de máquina (como TensorFlow, scikit-learn), ferramentas de visualização (como Tableau, Power BI), e bancos de dados (como SQL, NoSQL).</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Gestão de Projetos de TI</h4>
+                    
+                    <ul>
+                        <li>Envolve o planejamento, execução e supervisão de projetos de tecnologia da informação para garantir que sejam concluídos dentro do prazo e do orçamento, atendendo aos requisitos estabelecidos.</li>
+                        <li>Definir escopo do projeto, gerenciar cronogramas, alocar recursos, mitigar riscos, comunicar-se com partes interessadas, e garantir a qualidade dos entregáveis.</li>
+                        <li> Softwares de gerenciamento de projetos (como Microsoft Project, JIRA, Trello), metodologias de gerenciamento (como Agile, Scrum, Waterfall), e ferramentas de colaboração (como Slack, Asana).</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h4>Administração de Redes e Sistemas</h4>
+                    
+                    <ul>
+                        <li>Envolve o gerenciamento e manutenção de redes de computadores e sistemas operacionais para garantir sua eficiência e segurança.</li>
+                        <li>Configurar e manter hardware e software de rede, monitorar o desempenho da rede, solucionar problemas de conectividade, gerenciar servidores, e garantir a segurança da rede.</li>
+                        <li>Roteadores, switches, servidores, sistemas operacionais (como Windows Server, Linux), software de monitoramento de rede (como Nagios), e ferramentas de virtualização (como VMware).
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h3>Habilidades de Programação</h3>
+                    <div class="skills-track">
+                    <div class="skills-programming">
+                        <div class="img-skills"><img src="icons/html-icon.png" alt=""></div>
+                        <h4>HTML</h4>
+                        <p>Linguagem de marcação para criação de páginas web.</p>
+                    </div>
+                    <div class="skills-programming">
+                        <div class="img-skills"><img src="icons/css-icon.png" alt=""></div>
+                        <h4>CSS</h4>
+                        <p>Linguagem de folha de estilo para design de páginas da web.</p>
+                    </div>
+                    <div class="skills-programming">
+                        <div class="img-skills"><img src="icons/javascript-icon.png" alt=""></div>
+                        <h4>JavaScript</h4>
+                        <p>Linguagem de programação para conteúdo interativo da web.</p>
+                    </div>
+                    <div class="skills-programming">
+                        <div class="img-skills"><img src="icons/php-icon.png" alt=""></div>
+                        <h4>PHP</h4>
+                        <p>Linguagem de script do lado do servidor para desenvolvimento web.</p>
+                    </div>
+                    <div class="skills-programming">
+                        <div class="img-skills"><img src="icons/java-icon.png" alt=""></div>
+                        <h4>Java</h4>
+                        <p>Linguagem de programação orientada a objetos.</p>
+                    </div>
+                    <div class="skills-programming">
+                        <div class="img-skills"><img src="icons/c-icon.png" alt=""></div>
+                        <h4>C#</h4>
+                        <p>Linguagem de programação para aplicativos .NET.</p>
+                    </div>
+                    <div class="skills-programming">
+                        <div class="img-skills"><img src="icons/sql-icon.png" alt=""></div>
+                        <h4>SQL</h4>
+                        <p>Linguagem para gerenciamento e consulta de bancos de dados.</p>
+                    </div>
+                    <div class="skills-programming">
+                        <div class="img-skills"><img src="icons/firebird-icon.svg" alt="" style="max-width: 100px;"></div>
+                        <h4>Firebird</h4>
+                        <p>Sistema de gerenciamento de banco de dados relacional voltado para o desenvolvimento de aplicações robustas e de alto desempenho.</p>
+                    </div>
+                    <div class="skills-programming last-row">
+                        <div class="img-skills"><img src="icons/firebase-icon.png" alt=""></div>
+                        <h4>Firebase</h4>
+                        <p>Plataforma de desenvolvimento de aplicativos para criar, gerenciar e melhorar aplicativos móveis e da web.</p>
+                    </div>
+                    <div class="skills-programming last-row">
+                        <div class="img-skills"><img src="icons/flutter-icon.png" alt=""></div>
+                        <h4>Flutter</h4>
+                        <p>Flutter é um kit de desenvolvimento de software para criar aplicativos nativos de alta performance para iOS, Android, web e desktop.</p>
+                    </div>
+                
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <img src="imagens/logo-2.svg" alt="Logo" width="50" height="50">
+        <p>Samuel Madoglio - 2024</p>
+        <nav class="nav-footer">
+            <ul class="center-nav">
+                <div class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills-me">Competências</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="contato" id="contato">
+            <a href="mailto:seuemail@example.com">
+                <p class="p-footer">
+               <img class="icon-footer" src="/icons/icon-email.png" alt="">
+                samuel.madoglio@hotmail.com
+            </p></a>
+            <a href="https://wa.me/351938985582"><p class="p-footer">
+                <img class="icon-footer" src="icons/icon-whatsapp.png" alt="">
+                938 985 582
+            </p></a>
+            <a href="https://www.google.com/maps?q=Arruda+dos+Vinhos"><p class="p-footer">
+                <img class="icon-footer" src="icons/icon-marcador.png" alt="">
+                Arruda dos Vinhos, Lisboa
+            </p></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+    
+                var target = this.hash;
+                var $target = $(target);
+    
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing');
+            });
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links.mobile');
+    const hamburger = document.querySelector('.hamburger');
+    navLinks.classList.toggle('show');
+    hamburger.classList.toggle('active');
+
+    // Se o menu foi aberto, iniciar o timer para fechá-lo após 7 segundos
+    if (navLinks.classList.contains('show')) {
+        setTimeout(() => {
+            navLinks.classList.remove('show');
+            hamburger.classList.remove('active');
+        }, 7000); // 7000 milissegundos = 7 segundos
+    }
+}
+    </script>
+    
+    
+</body>
+</html>

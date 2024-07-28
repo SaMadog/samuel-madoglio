@@ -1,0 +1,534 @@
+/* Variáveis das Cores */
+:root {
+    --background: #FFFFFF;
+    --backgroud-nav-footer: #F7F7F7;
+    --font: #0D0D0D;
+    --border: #D6D6D6;
+    --hover: #F7F7F7;
+    --link: #0066CC;
+}
+
+/* Estilo geral */
+html {
+    font-size: 16px; /* Define o tamanho da fonte base */
+}
+
+body {
+    max-width: 100vw;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--font);
+    font-size: 1rem; /* 1rem = 16px */
+}
+
+h1 {
+    font-size: 3.5rem; /* 3.5rem = 56px */
+}
+
+h2 {
+    font-size: 3rem; /* 3rem = 48px */
+}
+
+h3 {
+    font-size: 2.25rem; /* 2.25rem = 36px */
+}
+
+h4 {
+    font-size: 1.875rem; /* 1.875rem = 30px */
+}
+
+h5 {
+    font-size: 1.5rem; /* 1.5rem = 24px */
+}
+
+h6 {
+    font-size: 1.25rem; /* 1.25rem = 20px */
+}
+
+p {
+    font-size: 1rem; /* 1rem = 16px */
+}
+
+.small-text {
+    font-size: 0.875rem; /* 0.875rem = 14px */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.5em 0; /* Margem inferior para espaçamento */
+    font-weight: bold; /* Fonte em negrito para cabeçalhos */
+    line-height: 1.2; /* Line-height menor para cabeçalhos */
+}
+
+/* Estilo padrão para listas */
+ul, ol {
+    margin: 0 0 1em 1.5em; /* Margem para listas */
+    padding: 0;
+}
+
+li {
+    margin: 1em 0; /* Margem entre itens da lista */
+}
+
+/* Estilo padrão para links */
+a {
+    color: var(--link); /* Cor padrão do link */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilo do cabeçalho */
+nav {
+    background: var(--backgroud-nav-footer);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 var(--spacing-unit);
+}
+
+nav ul div {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 25px;
+}
+
+nav ul div li a {
+    color: var(--font);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 0.8vw;
+}
+
+nav ul .logo {
+    list-style: none;
+}
+
+nav ul .logo img {
+    margin-left: auto;
+    width: 10vw; 
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: var(--font);
+    color: var(--hover);
+    border-radius: 2.5vw;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    padding: 0;
+    margin: 20px;
+    right: 10px;
+    top: 20px;
+}
+
+.hamburger div {
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    margin: -3px;
+}
+
+.nav-links.mobile {
+    display: none;
+    flex-direction: column;
+    width: 40vw;
+    text-align: left;
+    background-color: var(--backgroud-nav-footer);
+    position: absolute;
+    list-style: none;
+    top: 88px;
+    right: 0;
+    padding: 0.5vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.nav-links.mobile.show {
+    display: flex;
+    max-height: 60vw;
+    opacity: 1;
+}
+
+.nav-links.mobile li {
+    margin: 0;
+    padding: 2vw;
+}
+
+.nav-links.mobile li a {
+    color: var(--font);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 0.4vw;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar1 {
+    transform: rotate(-45deg) translate(-4px, 11px);
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+}
+
+.hamburger.active .bar3 {
+    transform: rotate(45deg) translate(-5px, -14px);
+}
+
+/* Estilo do Main */
+main {
+    margin: 2vw;
+}
+
+/* Estilo da seção hero */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2vw 1vw;
+    align-items: center;
+    border-bottom: 0.1vw solid var(--border);
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 70vw;
+    flex: 1;
+}
+
+.hero-content h1 {
+    margin: 0;
+}
+
+.hero-content h3 {
+    margin: 0 0 -0.2em 0;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    margin-left: 2vw;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    width: 35vw;
+    height: 35vw;
+    object-fit: cover;
+    object-position: center top;
+    border: 0.3vw solid var(--font);
+}
+
+/* Botões */
+.buttons {
+    margin: 1vw 0 0;
+}
+
+.download-cv,
+.contact-me {
+    width: 13vw;
+    height: 3vw;
+    background-color: var(--background);
+    color: var(--font);
+    min-width: 120px;
+    min-height: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 0.5vw;
+}
+
+.download-cv:hover,
+.contact-me:hover {
+    background-color: var(--font);
+    color: var(--background);
+}
+
+/* Estilo da seção sobre mim */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: 2vw;
+    border-bottom: 0.1vw solid var(--border);
+}
+
+.about-me {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.about-tittle {
+    max-width: 90%;
+}
+
+.about-tittle h6 {
+    margin: 0.2vw;
+}
+
+.about-tittle h3 {
+    margin: 0;
+}
+
+.about h3 {
+    margin-bottom: 2vw;
+}
+
+.about-text {
+    max-width: 50%;
+}
+
+.mission {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1vw;
+}
+
+/* Estilo da seção de competências */
+.skills {
+    padding: 4vw;
+    text-align: center;
+}
+
+.skill-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60vw, 1fr));
+    gap: 4vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.skill-card {
+    width: 80vw;
+    padding: 2vw;
+    border-left: 0.2vw solid var(--border);
+    text-align: left;
+}
+
+.skill-card ul {
+    list-style: none;
+    margin: 0;
+    text-align: justify;
+}
+
+.line {
+    margin: 2vw 0;
+    background: var(--border);
+    height: 0.05vw;
+}
+
+/* Estilo da seção de habilidades */
+.skills-track {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+}
+
+.skills-programming {
+    text-align: center;
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+}
+
+.img-skills {
+    display: flex;
+    justify-content: center
+
+;
+    align-items: center;
+    height: 10vw;
+}
+
+.img-skills img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    background: var(--backgroud-nav-footer);
+    padding: 4vw;
+    text-align: center;
+}
+
+.nav-footer {
+    background: none;
+}
+
+.nav-footer ul {
+    justify-content: center;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.p-footer {
+    color: var(--font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-footer {
+    width: 25px;
+    margin: 5px;
+}
+
+/* Media Queries */
+
+/*Laptop G*/
+@media (max-width: 1600px) {
+    .skills-track {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+    .hero {
+        padding-top: 5vw;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-top: 2vw;
+    }
+
+    .skills-track {
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    .skills-track {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Tablets e telas pequenas */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin: 0;
+    }
+
+    .hero-image img {
+        min-width: 45vw;
+        min-height: 45vw;
+    }
+
+    .about-me,
+    .skill-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        max-width: 90%;
+    }
+
+    .skills-track {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .skills-track .last-row {
+        display: flex;
+        justify-content: center;
+        grid-column: span 1;
+    }
+
+    .contato {
+        display: block;
+    }
+}
+
+/* Telas muito pequenas e dispositivos móveis */
+@media (max-width: 480px) {
+    .nav-links.mobile {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 5vw 2vw;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .download-cv,
+    .contact-me {
+        width: 9vw;
+        height: 3vw;
+        font-size: 0.875rem;
+    }
+
+    .about-tittle h6 {
+        margin: 2vw 0;
+    }
+
+    .p-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
